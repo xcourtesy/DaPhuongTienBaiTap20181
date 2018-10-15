@@ -6,7 +6,6 @@
 
 
 %% 1. Ghi Am file wave
-
 % Tan so lay mau: 48000 Hz
 % Kich thuoc mau: 16 bit/sample
 % So kenh: 1 channel
@@ -17,7 +16,7 @@ r = audiorecorder(48000, 16, 1);
 
 record(r);
 %%
-% Ket thuc ghi am 
+% Ket thuc ghi am
 stop(r);
 %%
 % Lay Du lieu
