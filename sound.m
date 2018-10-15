@@ -23,11 +23,11 @@ stop(r);
 % Lay Du lieu
 orig = getaudiodata(r,'double');
 % Luu file wave
-%wavwrite(orig,48000,16,'orig_input.wav');
+% wavwrite(orig,48000,16,'orig_input.wav');
 %% 2. Tao Giai Dieu bang cach tang tan so lay mau tu 48000 len 96000
 
 rd = wavread('orig_input.wav');
-%wavwrite(rd,96000,16,'melody.wav');
+% wavwrite(rd,96000,16,'melody.wav');
 
 %% 3. FFT file melody.wav
 rd = wavread('melody.wav');
