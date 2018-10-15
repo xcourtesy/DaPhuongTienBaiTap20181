@@ -15,20 +15,20 @@ r = audiorecorder(48000, 16, 1);
 % Ghi am Ho Ten, So Hieu Sinh Vien, Lop, Khoa
 
 record(r);
-%%
+%
 % Ket thuc ghi am
 stop(r);
-%%
+%
 % Lay Du lieu
 orig = getaudiodata(r,'double');
 % Luu file wave
 % wavwrite(orig,48000,16,'orig_input.wav');
-%% 2. Tao Giai Dieu bang cach tang tan so lay mau tu 48000 len 96000
+% 2. Tao Giai Dieu bang cach tang tan so lay mau tu 48000 len 96000
 
 rd = wavread('orig_input.wav');
 % wavwrite(rd,96000,16,'melody.wav');
 
-%% 3. FFT file melody.wav
+% 3. FFT file melody.wav
 rd = wavread('melody.wav');
 plot(rd);figure;
 fs = 96000; % Tan so lay mau
@@ -41,7 +41,7 @@ plot(faxis,fftshift(magTransform),'r'); % Ve pho FFT
 xlabel('Frequency (Hz)');
 title('FFT of melody.wav');
 
-%% 4. Spectrogram file melody.wav
+% 4. Spectrogram file melody.wav
 rd = wavread('melody.wav');
 fs = 96000; %Tan so lay mau
 win = 128; % do rong khung cua so lay mau
