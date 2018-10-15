@@ -5,7 +5,7 @@
 % Lop: Dien Tu 8 - K60
 
 
-%% 1. Ghi Am file wave
+% 1. Ghi Am file wave
 % Tan so lay mau: 48000 Hz
 % Kich thuoc mau: 16 bit/sample
 % So kenh: 1 channel
